@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanra</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script/script.js"></script>
+  <link rel="stylesheet" href="css/media.css" media="(max-width:1200px)"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="script" href="script/script.js">
+</head>
+<body>
+  
+  
+    <div class="container">
+    <header>
+  
+  <div class="logo">
+    <img src="images/logo.png"  />
+  </div>
+
+  <div class="destination-search">
+    <img class="dest-search" src="images/lupa.png"  />
+    <p>Пошук напрямків</p>
+  </div>
+
+<input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+
+  <nav class="nav">
+    <a href="#reviews">Відгуки</a>
+    <a href="#destinations">Напрямки</a>
+    <a href="#bannner-section">Квитки</a>
+    <a href="#explore">Блог</a>
+  </nav>
+
+  <button class="download">Завантажити</button>
+   
+</header>
+    </div>
+  
+
+  <main>
+    
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-left">
+            <h1>Люди не обирають подорожі, подорожі обирають людей</h1>
+
+            <p>
+              Щоб отримати максимум задоволення від пригод,
+              вам просто потрібно кинути все - та поїхати
+              куди вам подобається. Ми чекаємо на вас!
+            </p>
+
+            <div class="hero-buttons">
+              <button class="plan-trip">Запланувати <br /> поїздку</button>
+
+              <div class="stories">
+                <img src="images/Story.png"/>
+                <span>Наші <br /> сторіз</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <img src="images/man.png"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+     <section class="features">
+      <div class="container">
+        <div class="features-top">
+          <div class="avatars">
+            <img src="images/a1.png"/>
+            <img src="images/a2.png"/>
+            <img src="images/a3.png"/>
+            <span>3K+</span>
+          </div>
+
+          <p>Відвідали більше <br /> 2000 місць 🏝️</p>
+        </div>
+
+        <div class="features-box">
+          <div class="features-left">
+            <img src="images/blue-bg.png" class="left-bg"  />
+            <img src="images/man2.png" class="left-img"  />
+            <img src="images/cloud.png" class="cloud" />
+            <img src="images/play.png" class="play-btn" />
+          </div>
+
+          <div class="features-text">
+            <h2>Ваш компаньйон у подорожах який носить всю інформацію з собою</h2>
+          </div>
+          <img src="images/mobile-plane.svg" class="mobile-plane">
+
+          <div class="features-right">
+            <div class="yellow-circle"></div>
+            <img src="images/woman.png"  />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-mobile">
+  <div class="container">
+
+    <div class="features-mobile-top">
+      <div class="features-mobile-avatars">
+        <img src="images/a1.png"/>
+        <img src="images/a2.png" />
+        <img src="images/a3.png"/>
+        <span>3K+</span>
+      </div>
+      <p class="features-mobile-subtitle">Відвідали більше <br/> 2000 місць 🏝️</p>
+    </div>
+
+    <div class="features-mobile-box">
+      <p class="features-mobile-text">Ваш компаньйон у подорожах котрий носить всю інформацію з собою</p>
+      <img src="images/playsvg.svg" class="features-mobile-play">
+      <img src="images/mobile-plane.svg" class="features-mobile-plane">
+      <img src="images/cloud-small.png" class="features-mobile-cloud">
+      <div class="features-mobile-woman">
+        <div class="features-mobile-circle"></div>
+        <img src="images/woman.png" class="features-mobile-woman-img">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <section class="destinations" id="destinations">
+  <div class="container">
+    <div class="destinations-head">
+      <div class="destinations-wrap">
+        <img src="images/cloud-third.svg" class="destinations-cloud">
+        <h2>Відкрийте для себе дотик природи🌈</h2>
+      </div>
+      <div class="destinations-buttons">
+        <button class="destinations-button-prev" type="button" id="destinations-button-prev">
+          <img src="images/arrow.svg">
+        </button>
+        <button class="destinations-button-next" type="button" id="destinations-button-next">
+          <img src="images/arrownext.svg">
+        </button>
+      </div>
+    </div>
+
+    <div class="destinations-view" id="destinationsView">
+      <div class="destinations-track" id="screen3Track">
+        <article class="destinations-slide">
+          <img src="images/venice.png"/>
+          <div class="destinations-tag">
+            <img src="images/pin-red.svg"/>
+            <span>Венеція</span>
+          </div>
+        </article>
+
+        <article class="destinations-slide">
+          <img src="images/iceland.png"/>
+          <div class="destinations-tag">
+            <img src="images/pin-red.svg"/>
+            <span>Ісландія</span>
+          </div>
+        </article>
+
+        <article class="destinations-slide">
+          <img src="images/moab.png"/>
+          <div class="destinations-tag">
+            <img src="images/pin-red.svg"/>
+            <span>Моаб</span>
+          </div>
+        </article>
+
+       <article class="destinations-slide">
+          <img src="images/arizona.png"/>
+          <div class="destinations-tag">
+            <img src="images/pin-red.svg"/>
+            <span>Арізона</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="promo-page" id="promo">
+  <div class="container">
+    <div class="promo-content">
+
+      
+      <div class="promo">
+        <img src="images/balloon.png" class="promo-balloon">
+        <div class="promo-green-circle"></div>
+
+        <div class="promo-weather-card">
+          <span class="promo-temp">-12<span class="promo-degrees">°С</span></span>
+          <div class="promo-weather-info">
+            <div class="promo-weather-row">
+              <img src="images/wind-icon.svg" >
+              <div>
+                <span class="promo-weather-label">Вітер</span>
+                <span class="promo-weather-value">13 km</span>
+              </div>
+            </div>
+            <div class="promo-weather-row">
+              <img src="images/snow-icon.svg" >
+              <div>
+                <span class="promo-weather-label">Сніг</span>
+                <span class="promo-weather-value">80 cm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="promo-cities">
+          <div class="promo-cities-card">
+            <img src="images/morocco.png" >
+            <div class="promo-cities-info">
+              <span class="promo-cities-name">Марокко</span>
+              <span class="promo-cities-route">YVR → LAX → DXB</span>
+            </div>
+          </div>
+
+          <div class="promo-cities-card">
+            <img src="images/denver.png" >
+            <div class="promo-cities-info">
+              <span class="promo-cities-name">Денвер</span>
+              <span class="promo-citis-route">YVR → LAX →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="promo-bottom-row">
+          <div class="promo-bottom-item">
+            <img src="images/temperature.svg" >
+            <span class="promo-bottom-value">-12°С</span>
+            <span class="promo-bottom-label">Temp</span>
+          </div>
+          <div class="promo-bottom-item">
+            <img src="images/wind-icon2.svg" >
+            <span class="promo-bottom-value">13 km</span>
+            <span class="promo-bottom-label">Wind</span>
+          </div>
+          <div class="promo-bottom-item">
+            <img src="images/drop.svg" >
+            <span class="promo-bottom-value">80 cm</span>
+            <span class="promo-bottom-label">Snow</span>
+          </div>
+          <img src="images/cloud-small.svg" class="promo-cloud">
+        </div>
+
+      </div>
+      
+      <div class="promo-right">
+        <span class="promo-subtitle">ПІДКЛЮЧИТИСЯ</span>
+        <h2 class="promo-title">Подорож має значення більше, ніж фініш <img src="images/promo-xvirtka.svg" class="promo-xvirtka"></h2>
+        <p class="promo-description">
+          Ваш ідеальний супутник у подорожах.
+          Містить усю інформацію, яка знадобиться вам
+          під час поїздки.
+        </p>
+        <div class="promo-store-btns">
+          <a href="#" class="promo-store-btn promo-google">
+            <img src="images/google-play.svg" >
+            <div>
+              <span class="promo-store-label">Завантажити</span>
+              <span class="promo-store-name">Google play</span>
+            </div>
+          </a>
+          <a href="#" class="promo-store-btn promo-apple">
+            <img src="images/apple.svg" >
+            <div>
+              <span class="promo-store-label">Завантажити</span>
+              <span class="promo-store-name">Apple Store</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+<section class="banner-section" id="banner-section">
+  <div class="container">
+    <div class="banner-wrapper">
+      <picture>
+        <source media="(max-width: 360px)" srcset="images/mobile-banner.png">
+        <source media="(max-width: 768px)" srcset="images/tablet-banner.png">
+        <img src="images/banner.png" class="banner-bg">
+      </picture>
+      <img src="images/banner-left.png" class="banner-left-img">
+      
+      <div class="banner-content">
+        <h2 class="banner-title">Знайдіть найкращі<br><span>пропозиції</span></h2>
+        
+        <a href="#" class="banner-btn">
+          Купити квитки
+          <img src="images/banner-plane.svg" class="banner-plane-svg">
+        </a>
+      </div>
+      </div>
+  </div>
+</section>
+
+ <section class="reviews-page" id="reviews">
+  <div class="container">
+    <div class="reviews-content">
+      <div class="reviews-left">
+        <div class="reviews-circles">
+          <div class="reviews-circle reviews-circle-big">
+            <img src="images/review_place1.png"/>
+            <img src="images/star5.svg" class="reviews-star-img"/>
+          </div>
+
+          <div class="reviews-circle reviews-circle-canada">
+            <img src="images/review_place2.png"/>
+          </div>
+
+          <div class="reviews-circle reviews-circle-algir">
+            <img src="images/review_place3.png"/>
+          </div>
+
+          <img src="images/cloud-small.svg" class="reviews-cloud reviews-cloud-left"/>
+          <img src="images/cloud-small.svg" class="reviews-cloud reviews-cloud-right"/>
+        </div>
+
+        <div class="reviews-tag reviews-tag-big">
+          <img src="images/pin-red.svg"/>
+          <span>Десь там</span>
+        </div>
+
+        <div class="reviews-tag reviews-tag-canada">
+          <img src="images/pin-red.svg"/>
+          <span>Канада</span>
+        </div>
+
+        <div class="reviews-tag reviews-tag-algir">
+          <img src="images/pin-red.svg"/>
+          <span>Алжир</span>
+        </div>
+
+      </div>
+
+     
+      <div class="reviews-right">
+
+        <p class="review-text">
+          Їхній сервіс просто чудовий і дешевший, ніж
+          безпосередньо в готелі чи на будь-якому
+          іншому сайті бронювання. Ви одразу
+          відповіли нам, і жодних проблем не виникло.
+        </p>
+
+        <div class="reviews-avatars">
+          <div class="reviews-avatar reviews-avatar-active">
+            <img src="images/rev1.png"/>
+          </div>
+          <div class="reviews-avatar">
+            <img src="images/rev2.png"/>
+          </div>
+          <div class="reviews-avatar">
+            <img src="images/rev3.png"/>
+          </div>
+          <div class="reviews-avatar">
+            <img src="images/rev4.png"/>
+          </div>
+          <div class="reviews-avatar">
+            <img src="images/rev5.png"/>
+          </div>
+          <div class="reviews-avatar">
+            <img src="images/rev6.png"/>
+          </div>
+          <div class="reviews-arrow">
+            <img src="images/arrownext.svg"/>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="sponsors">
+  <div class="container">
+    <div class="sponsors-row">
+      <img src="images/amazon.svg"/>
+      <img src="images/oyo.svg"/>
+      <img src="images/airbnb.svg"/>
+      <img src="images/tripadvisor.svg"/>
+      <img src="images/expedia.svg"/>
+      <img src="images/fedex.svg"/>
+    </div>
+  </div>
+</section>
+
+
+<section class="explore-section" id="explore">
+  <div class="container">
+    <div class="explore-grid">
+      
+      <div class="explore-card-main">
+        <img src="images/hero-man.png" class="explore-photo">
+        
+        <div class="explore-banner">
+          <h2>Досліджуйте світ <br>разом з нами 🌍</h2>
+          <button class="explore-btn">ЗАПЛАНУВАТИ ПОЇЗДКУ</button>
+        </div>
+      </div>
+
+      <div class="explore-card card-blue">
+        <div class="explore-card-head">
+          <h3>Читай наш <br>блог</h3>
+          <img src="images/arrow-up.svg"  class="explore-arrow">
+        </div>
+        <p>Ми ділимось нашою подорожжю та історіями</p>
+      </div>
+
+      <div class="explore-card card-green">
+        <div class="explore-card-head">
+          <h3>Перегляньте наш <br>робочий процес</h3>
+          <img src="images/arrow-up.svg" class="explore-arrow">
+        </div>
+        <p>Для нас важливо поділитися нашим робочим процесом, щоб ви могли нам довіряти.</p>
+      </div>
+
+      <div class="explore-card card-skin">
+        <div class="explore-card-head">
+          <h3>Чат з <br>експертом</h3>
+          <img src="images/arrow-up.svg"  class="explore-arrow">
+        </div>
+        <div class="explore-badge-box">
+          <img src="images/live-badge.svg" >
+        </div>
+        <p>Понад 3 000 експертів нашої команди по всьому світу створюють неймовірні проєкти.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      
+      <div class="footer-top">
+        <div class="footer-top-left">
+          <h3 class="footer-brand-text">Ми прокладаємо<br>шлях у світі пригод</h3>
+          <div class="footer-socials">
+            <img src="images/icon-web.svg">
+            <img src="images/icon-youtube.svg">
+            <img src="images/icon-instagram.svg">
+            <img src="images/icon-twitter.svg">
+          </div>
+        </div>
+        
+        <div class="footer-top-right">
+          <h4 class="footer-subscribe-title">Підпишись на<br>нашу розсилку</h4>
+          <div class="footer-subscribe-form">
+            <span class="footer-subscribe-text">Ваша пошта</span>
+            <div class="footer-subscribe-btn">
+              <img src="images/footer-arrow.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-main">
+        <div class="footer-brand-block">
+          <div class="footer-logo">
+            <img src="images/logo-star.svg">
+            <span>Kanra</span>
+          </div>
+        </div>
+        
+        <div class="footer-links-column">
+          <h5>Контакти</h5>
+          <ul class="footer-contacts">
+            <li>
+              <img src="images/icon-email.svg">
+              <span>getetmail@kanra.com</span>
+            </li>
+            <li>
+              <img src="images/icon-phone.svg">
+              <span>(270)-555-0117</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links-column">
+          <h5>Компанія</h5>
+          <ul>
+            <li>Кар'єра</li>
+            <li>Розробники</li>
+            <li>Наша історія</li>
+          </ul>
+        </div>
+
+        <div class="footer-links-column">
+          <h5>Kanra</h5>
+          <ul>
+            <li>Чому Kanra</li>
+            <li>Клієнти</li>
+            <li>Прес-інфо</li>
+          </ul>
+        </div>
+
+        <div class="footer-links-column">
+          <h5>Ресурси</h5>
+          <ul>
+            <li>Кар'єра</li>
+            <li>Про нас</li>
+            <li>Особливості</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">2023 <strong>Rylic Studio</strong> | Всі права захищено</p>
+        <div class="footer-payments">
+          <img src="images/stripe.svg">
+          <img src="images/paypal.svg">
+          <img src="images/wq.svg">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+  </main>
+
+</body>
+</html>
