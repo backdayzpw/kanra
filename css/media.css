@@ -304,6 +304,7 @@
   .card-blue {
     grid-column: 1;
     grid-row: 1;
+    
   }
 
   .card-green {
@@ -791,11 +792,13 @@
   .card-blue {
     grid-column: 1 / -1;
     grid-row: 1;
+    gap:20px;
   }
 
   .card-green {
     grid-column: 1 / -1;
     grid-row: 2;
+    gap:20px;
   }
 
   .card-skin {
